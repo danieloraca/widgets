@@ -1,0 +1,7 @@
+parameters:
+    excludes_analyse:
+        - %currentWorkingDirectory%/*/Test/*
+        - %currentWorkingDirectory%/*/Tests/*
+    checkMissingIterableValueType: false
+    checkGenericClassInNonGenericObjectType: false
+

@@ -1,3 +1,2 @@
-#index:
-#    path: /
-#    controller: App\Controller\DefaultController::index
+widget_routes:
+  resource: "@ProjectWidgetBundle/Resources/config/routing/routing.yaml"

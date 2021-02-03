@@ -1,0 +1,8 @@
+index:
+    path: /
+    controller: App\Project\WidgetBundle\Controller\MainController::index
+
+api_widgets:
+    path: api/widgets/{amount}
+    controller: App\Project\WidgetBundle\Controller\ApiWidgetController::index
+    methods:  [GET]

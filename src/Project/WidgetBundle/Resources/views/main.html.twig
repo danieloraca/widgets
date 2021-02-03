@@ -1,0 +1,22 @@
+{% extends "base.html.twig" %}
+
+{% block body %}
+    <div class="d-block">
+        <h1>Widgets</h1>
+        <hr />
+        <div class="container">
+            {{ form(form) }}
+
+            {% if (info) %}
+            <hr />
+                <div class="row">
+                    <div class="col-md-2"><h4>Response:</h4></div>
+                    <div class="col-md-8">
+                        {% for widget in info %}
+                            {{ widget }}<br />
+                        {% endfor %}
+                    </div>
+            {% endif %}
+        </div>
+    </div>
+{% endblock %}

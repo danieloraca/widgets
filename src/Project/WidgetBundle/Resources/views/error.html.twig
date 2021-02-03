@@ -1,0 +1,14 @@
+{% extends "base.html.twig" %}
+
+{% block body %}
+<div class="d-block">
+    <h1>Widgets</h1>
+    <hr />
+    <div class="container">
+        <h4>Error</h4>
+        {% if (error) %}
+            {{ error }}
+            <a href="{{ path('index') }}">Go Back</a>
+        {% endif %}
+    </div>
+    {% endblock %}
